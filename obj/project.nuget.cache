@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rew5yiQD5PqAUNJRoRMk0q5CGrIVqH+ahq+ntpXTUwcJRuM3nYUuW7F9ly/VWSeiLmMDfaki/KQL9YAMqREY0Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Senac\\Modulo2\\Atividade Integradora 2\\etapa_5\\atv4\\atv4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\mysqlconnector\\1.3.10\\mysqlconnector.1.3.10.nupkg.sha512"
+  ],
+  "logs": []
+}

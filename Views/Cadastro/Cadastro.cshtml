@@ -1,0 +1,89 @@
+
+
+@model Cadastro
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="Agendamento col-lg-6 col-md">
+
+            <form class="AgendamentoForm" method="POST" asp-action="Cadastro" onsubmit="return validarCadastro(this);">
+                <h1 class="Titulo">Register</h1>
+
+                <p class="text-success">
+                    @ViewBag.Mensagem
+                </p>
+
+                <div class="form-group">
+                    <label asp-for="NomeCompleto" class="TextoForm">Full name: </label>
+                    <input asp-for="NomeCompleto" class="form-control" type="text" id="nomeCompleto" name="nomeCompleto">
+                     <span class="msgError msgNomeCompleto"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Cpf" class="TextoForm">Social Security Number: </label>
+                    <input asp-for="Cpf" class="form-control" type="text" id="cpf">
+                     <span class="msgError msgCpf"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DataNascimento" class="TextoForm">Date of Brith: </label>
+                    <input asp-for="DataNascimento" class="form-control" type="date" id="dataNascimento">
+                     <span class="msgError msgDataNascimento"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Email" class="TextoForm">E-mail: </label>
+                    <input asp-for="Email" class="form-control" type="email" id="email">
+                     <span class="msgError msgEmail"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Login" class="TextoForm">Login: </label>
+                    <input asp-for="Login" class="form-control" type="text" id="login">
+                     <span class="msgError msgLogin"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Senha" class="TextoForm">Password: </label>
+                    <input asp-for="Senha" class="form-control" type="password" id="password">
+                     <span class="msgError msgPassword"></span>
+                </div>
+
+                <label>Address: </label>
+
+                <div class="form-group">
+                    <label asp-for="Rua" class="TextoForm">Street: </label>
+                    <input asp-for="Rua" class="form-control" type="text" id="rua">
+                     <span class="msgError msgRua"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Numero" class="TextoForm">Number: </label>
+                    <input asp-for="Numero" class="form-control" type="text" id="numero">
+                     <span class="msgError msgNumero"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Bairro" class="TextoForm">Boroughs: </label>
+                    <input asp-for="Bairro" class="form-control" type="text" id="bairro">
+                     <span class="msgError msgBairro"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Cep" class="TextoForm">Zip Code: </label>
+                    <input asp-for="Cep" class="form-control" type="text" id="cep">
+                     <span class="msgError msgCep"></span>
+                </div>
+
+                <input class="submit btn btn-success btn-lg" type="submit" value="Register" />
+                 <span class="msgError msgEmail"></span>
+
+            </form>
+
+        </div>
+    </div>
+</div>

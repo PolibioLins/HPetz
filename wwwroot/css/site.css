@@ -1,0 +1,336 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.navbar {
+  background-color: #7bc9c9;
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.nav-item {
+  font-weight: bold;
+  font-size: 18px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+
+
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 20px;
+  padding-bottom: 80px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 30px; /* Vertically center the text there */
+  text-align: center;
+  background-color: #7bc9c9;
+  padding: 15px 0px;
+}
+
+.social {
+  line-height: 40px;
+  color: #11999e;
+}
+.footer-link {
+  margin: 20px 0px;
+  color: #11999e;
+
+}
+
+.footer-link:hover {
+  color: #cfdfdf;
+  text-decoration:none;
+}
+
+/* CSS Adicional
+-------------------------------------------------- */
+
+/*====================== Página inicial ======================*/
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #66bfbf;
+  font-family: "Sacramento", cursive;
+  font-size: 3em; /* 100% ou 1em é similar a 16px ---- rem ignora no parent*/
+  margin: 50 auto 0 auto;
+  padding: 30px 0px;
+}
+
+@media (min-width: 768px) {
+  h1{
+    padding: 30px;
+  }
+
+}
+
+h2 {
+  font-family: "Montserrat-Black", sans-serif;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.figuraPrincipal {
+  padding-bottom: 30px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.principal {
+  color: #66bfbf;
+  font-size: 2.5rem;
+  font-family: "Sacramento", cursive;
+}
+
+.love-Section{
+  background-color: #dff5f5;
+  border-radius: 1px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+
+.caixaPrincipal {
+  padding: 2% 5%;
+  text-align: center;
+}
+
+.caixaPrincipal:hover{
+  transform: scale(1.05);
+}
+
+/*====================== Adote o Seu Pet ======================*/
+
+.rowCard {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+}
+
+.card {
+  box-sizing: initial;
+  padding: 0px 0px 5px 0px;
+  margin: 20px auto;
+  width: 90%;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  color: #66bfbf;
+  padding: 3% 5%;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+.card-img-top {
+  height: 222PX; /*VERIFICAR SE SERÁ MANTIDO ASSIM*/
+  width: 100%;
+}
+
+
+img {
+  margin: 0;
+}
+
+@media(max-width:450px)
+{
+  .card{
+    margin: 20px auto;
+  }
+  .testimonial-text{
+    font-size: 16px;
+  }
+}
+
+
+/* Carousel */
+
+.testimonial {
+  text-align: center;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #dff5f5;
+  border-radius: 1px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+ 
+}
+
+.testimonial-text {
+  padding: 2% 15%;
+  text-align: center;
+  color: #66bfbf;
+}
+
+.testimonial-img {
+  width: 12%;
+  border-radius: 100%;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #66bfbf;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #66bfbf;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 7%, 15%;
+}
+
+
+
+/*====================== Sobre a H-Petz ======================*/
+
+.sobreBody {
+  align-content: center;
+}
+h3 {
+  color: #66bfbf;
+  font-family: "Sacramento", cursive;
+  font-size: 3em; /* 100% ou 1em é similar a 16px ---- rem ignora no parent*/
+  margin: 20px auto 0px auto;
+  padding: 30px;
+}
+
+.hrdot {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-style: dotted;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-width: 10px;
+  width: 70px;
+  color: lightslategrey;
+}
+
+.sobre {
+  width: 100%;
+  align-items: center;
+}
+
+.sobreHistoria {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sobreJuntar {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*====================== Cadastre-se ======================*/
+
+.table {
+  margin-top: 20px;
+}
+
+.textoTabela {
+  color: #7bc9c9;
+}
+.textoTabela:hover {
+  color: #cfdfdf;
+}
+
+.msgError {
+  color: red;
+}
+
+/*====================== Agendamento ======================*/
+
+.Agendamento {
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+
+

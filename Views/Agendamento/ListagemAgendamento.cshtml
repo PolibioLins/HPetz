@@ -1,0 +1,64 @@
+@model List<Agendamento>
+
+@{
+        ViewData["Title"] = "List of Appointments";
+}
+
+<!-- Em mudança para cards ou um sistema de listagem -->
+
+<div class="text-center">
+        <h1>@ViewData["Title"]</h1>
+
+        <div class="table-responsive">
+                <table class="table">
+                        <thead>
+                                <tr>
+                                        <th scope="col" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                Tutor's Name</th>
+                                        <th scope="col" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                Pet's Name
+                                        </th>
+                                        <th scope="col" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                Breed</th>
+                                        <th scope="col" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                Pet's Size
+                                        </th>
+                                        <th scope="col" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                Service</th>
+                                        <th scope="col" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                Appointment time</th>
+
+                                </tr>
+                        </thead>
+                        <tbody>
+                                @foreach (Agendamento a in Model)
+                                {
+                                        <tr>
+                                                <td scope="row" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                        @a.NomeTutor</td>
+                                                <td scope="row" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                        @a.NomePet</td>
+                                                <td scope="row" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                        @a.Raca
+                                                </td>
+                                                <td scope="row" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                        @a.Tamanho</td>
+                                                <td scope="row" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                        @a.Servico</td>
+                                                <td scope="row" class="textoTabela" align-items="center" style="padding: 8px;">
+                                                        @a.DataHoraAgendamento</td>
+                                                <td class="border-0 textoTabela"><a class="textoTabela"
+                                                        href="/Agendamento/Remover?IdAgendamento=@a.IdAgendamento"
+                                                        onclick="return confirm('Deseja mesmo excluir?')">Remover</a> |
+                                                        <a class="textoTabela"
+                                                        href="/Agendamento/Editar?IdAgendamento=@a.IdAgendamento">Alterar</a>
+                                                </td>
+                                        </tr>
+                                }
+                        </tbody>
+
+
+                </table>
+        </div>
+
+</div>

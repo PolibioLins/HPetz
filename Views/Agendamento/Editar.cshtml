@@ -1,0 +1,62 @@
+@using Microsoft.AspNetCore.Http;
+
+@model Agendamento;
+
+<div class="container">
+    <div class="row">
+        <div class="Agendamento col-lg-6 col-md">
+            <form class="AgendamentoForm" method="POST">
+
+                <h1 class="Titulo">Editar</h1>
+
+                <p class="text-success">
+                    @ViewBag.Mensagem
+                </p>
+                
+                <p>
+                    <input asp-for="IdCadastro" value=@Context.Session.GetInt32("IdCadastro") type="hidden">
+                </p>
+
+
+                <div class="form-group">
+                    <label asp-for="NomeTutor" class="TextoForm">Nome do Tutor: </label>
+                    <input asp-for="NomeTutor" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label asp-for="NomePet" class="TextoForm">Nome do Pet: </label>
+                    <input asp-for="NomePet" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Raca" class="TextoForm">Raça: </label>
+                    <input asp-for="Raca" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Tamanho" class="TextoForm">Tamanho: </label>
+                    <select asp-for="Tamanho" class="form-control" name="Tamanho" size=“1”>
+                        <option value=Pequeno selected=“selected”>Pequeno</option>
+                        <option value=Medio>Médio</option>
+                        <option value=Grande>Grande</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Servico" class="TextoForm">Serviço: </label>
+                    <select asp-for="Servico" class="form-control" name="Servico" size=“1”>
+                        <option value=Banho selected=“selected”>Banho</option>
+                        <option value=Tosa>Tosa</option>
+                        <option value=BanhoTosa>Banho & Tosa</option>
+                        <option value=BanhoFilhote>Banho para Filhotes</option>
+                        <option value=Consulta>Consulta</option>
+                        <option value=Vacinacao>Vacinação</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DataHoraAgendamento" class="TextoForm">Data e Horário: </label>
+                    <input asp-for="DataHoraAgendamento" class="form-control" type="datetime-local">
+                </div>
+                <input class="btn btn-success btn-lg" type="submit" value="Agendar" />
+
+            </form>
+
+        </div>
+    </div>
+</div>

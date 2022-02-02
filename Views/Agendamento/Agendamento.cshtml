@@ -1,0 +1,66 @@
+@using Microsoft.AspNetCore.Http;
+
+@model Agendamento;
+
+<div class="container">
+    <div class="row">
+        <div class="Agendamento col-lg-6 col-md">
+            <form class="AgendamentoForm" method="POST" onsubmit="return validarAgendamento(this);">
+
+                <h1 class="Titulo">Schedule a service</h1>
+
+                <p class="text-success">
+                    @ViewBag.Mensagem
+                </p>
+
+                <p>
+                    <input asp-for="IdCadastro" value=@Context.Session.GetInt32("IdCadastro") type="hidden">
+                </p>
+
+                <div class="form-group">
+                    <label asp-for="NomeTutor" class="TextoForm">Tutor's name: </label>
+                    <input asp-for="NomeTutor" class="form-control" type="text" id="nomeTutor">
+                    <span class="msgError msgNomeTutor"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NomePet" class="TextoForm">Pet's name: </label>
+                    <input asp-for="NomePet" class="form-control" type="text" id="nomePet">
+                    <span class="msgError msgNomePet"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Raca" class="TextoForm">Breed: </label>
+                    <input asp-for="Raca" class="form-control" type="text" id="raca">
+                    <span class="msgError msgRaca"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Tamanho" class="TextoForm">Size: </label>
+                    <select asp-for="Tamanho" class="form-control" name="Tamanho" size=“1”>
+                        <option value=Small selected=“selected”>Small</option>
+                        <option value=Medium>Medium</option>
+                        <option value=Large>Large</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Servico" class="TextoForm">Service: </label>
+                    <select asp-for="Servico" class="form-control" name="Servico" size=“1”>
+                        <option value=Washing selected=“selected”>Washing</option>
+                        <option value=Grooming>Grooming</option>
+                        <option value="Washing & Grooming">Washing & Grooming</option>
+                        <option value="Washing for puppys">Washing for puppys</option>
+                        <option value="Vet Services">Vet Services</option>
+                        <option value=VaciVaccinationsnacao>Vaccinations</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DataHoraAgendamento" class="TextoForm">Date and Time </label>
+                    <input asp-for="DataHoraAgendamento" class="form-control" type="datetime-local"
+                        id="dataHoraAgendamento">
+                    <span class="msgError msgDataHoraAgendamento"></span>
+                </div>
+                <input class="btn btn-success btn-lg" type="submit" value="Schedule" />
+
+            </form>
+
+        </div>
+    </div>
+</div>
