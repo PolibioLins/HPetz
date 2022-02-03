@@ -34,7 +34,7 @@ Projeto .Net MVC desenvolvido como Projeto integrado do curso de Técnico em sis
 + Comunicação com banco de dados SQL
 + Try-Catch de falhas
 + Validação de preenchimento de formulários
-+ Utilizar criptografia MD5 para Hash de senhas
++ Utilização criptografia MD5 para Hash de senhas
 
 ## Instalações necessárias:
 
