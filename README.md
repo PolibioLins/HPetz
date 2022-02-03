@@ -6,7 +6,7 @@ Projeto .Net MVC desenvolvido como Projeto integrado do curso de Técnico em sis
 
 <p>Este projeto é para o meu portfólio, podem passar qualquer feedback sobre o projeto e passar dicas sobre qualquer alteração ou melhora que possa ser feita.</p>
 <p>E-mail: polibio.l.costa@gmail.com</p>
-<p>Contato profissional: <a href="https://www.linkedin.com/in/polibio-lins/">Linkedin<a/></p>
+<p>Contato profissional: <a href="https://www.linkedin.com/in/polibio-lins/">Linkedin</a></p>
 
 ## Visão Geral:
   
@@ -36,14 +36,39 @@ Projeto .Net MVC desenvolvido como Projeto integrado do curso de Técnico em sis
 + Validação de preenchimento de formulários
 + Utilização criptografia MD5 para Hash de senhas
 
+## Tecnologias utilizadas:
+
+<h3> Front-end </h3>
+
++ HTML
++ CSS
++ Bootstrap
++ JavaScript
++ JQuery
+
+<h3> Back-end </h3>
+
++ C#
++ Asp .net core 3.1 LTS
++ Criptografia em MD5
++ XAMPP -> MySql & Apache
++ SQL --> Scripts do banco de dados
+
 ## Instalações necessárias:
 
 <p><strong>Programas utilizados:</strong></p>
 
-+ VS Code
-+ XAMPP
++ <a href="https://code.visualstudio.com/">VS Code</a>
++ <a href="https://www.apachefriends.org/pt_br/index.html">XAMPP</a>
++ <a href="https://dotnet.microsoft.com/en-us/download/dotnet">.net core 3.1 SDK</a>
 
 <p> Utilizando o XAMPP, colocar o arquivo sql.txt (a ser adicionado) no: <pre>http://localhost/phpmyadmin/</pre></p> 
+
+<p>Instalar os pacotes no VS Code para conexão com o banco de dados:</p>
+
+<pre><code>dotnet add package MySqlConnector</code></pre>
+
+<pre><code>dotnet add package Mysql.Data</code></pre>
 
 <p>Utilizar o comando abaixo no VS Code:</p>
 
