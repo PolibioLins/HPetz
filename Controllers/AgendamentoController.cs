@@ -60,6 +60,12 @@ namespace atv4.Controllers
 
         public IActionResult Agendamento()
         {
+
+            if (HttpContext.Session.GetInt32("IdCadastro") == null)
+            {
+                return RedirectToAction("Login", "Cadastro");
+            }
+            
             Agendamento agendamento = new Agendamento();
 
             return View();
@@ -97,7 +103,7 @@ namespace atv4.Controllers
 
             catch
             {
-                   ViewBag.Mensagem = "Falha na conexão com o banco de dados. Tente mais tarde!";
+                ViewBag.Mensagem = "Falha na conexão com o banco de dados. Tente mais tarde!";
                 return RedirectToAction("Login", "Cadastro");
             }
         }
